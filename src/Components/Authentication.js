@@ -23,6 +23,12 @@ function Authentication() {
             <input type='password' placeholder='Password' className='password'/>
             <button className='signIn'>Sign in</button>
         </form>
+        <div className='CreateAccount'>
+            <p>Don't have an account? <a href='#'>Create account</a></p>
+        </div>
+        <div className='forgotPassword'>
+            <a href='#'>Forgot password?</a>
+        </div>
     </div>
   )
 }

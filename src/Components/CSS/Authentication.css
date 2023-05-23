@@ -85,3 +85,29 @@ h1{
     margin: 0.5em;
     cursor: default;
 }
+.CreateAccount{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #96a4b1ee;
+    margin: 0.8em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.CreateAccount a{
+    color: #feffffee;
+    text-decoration: none;
+}
+.forgotPassword{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #96a4b1ee;
+    margin: 0.5em;
+}
+
+.forgotPassword a{
+    color: #feffffee;
+    text-decoration: none;
+}
