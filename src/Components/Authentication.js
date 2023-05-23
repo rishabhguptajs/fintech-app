@@ -29,6 +29,8 @@ function Authentication() {
         <div className='forgotPassword'>
             <a href='#'>Forgot password?</a>
         </div>
+        <circle className='circle1'></circle>
+        <circle className='circle2'></circle>
     </div>
   )
 }
