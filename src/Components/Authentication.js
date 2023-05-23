@@ -48,6 +48,7 @@ function Authentication() {
             <input type="text" placeholder="Last name" className="lastName" />
             <input type="text" placeholder="Email" className="email" />
             <input type="password" placeholder="Password" className="password" />
+            <input type="password" placeholder="Confirm password" className="confirmPassword" />
             <button className="createAccount" type="submit"> Create account </button>
             <div className="alreadyHaveAccount">
                 <p> Already have an account? <a href="#" onClick={setIsLoggedIn}>Sign in</a> </p>
