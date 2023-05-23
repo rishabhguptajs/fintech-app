@@ -5,7 +5,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Authentication() {
-    let [isLoggedIn, setIsLoggedIn] = useState (false);
+    let [isLoggedIn, setIsLoggedIn] = useState (true);
     function setIsLoggedOut(){
         setIsLoggedIn(false);
     }
