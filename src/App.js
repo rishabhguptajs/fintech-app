@@ -1,10 +1,13 @@
 import './App.css';
 import Authentication from './Components/Authentication';
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
     <div>
-      <Authentication />
+      <HomePage />
+      {/* <Authentication /> */}
+      
     </div>
   );
 }
