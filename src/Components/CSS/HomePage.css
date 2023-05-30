@@ -60,6 +60,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 0.88rem;
     cursor: pointer;
+    display: flex;
+}
+.getStarted_hp_icon{
+    transform: translateX(3px);
 }
 .bg_img1_hp{
     width: 20em;
@@ -88,9 +92,6 @@
     transition-duration: 0.2s;
     transform: translateY(-0.2em);
     box-shadow: 0px 0.5em 1em rgba(84, 113, 255, 0.381);
-    border: none;
-    margin: 0px 0.5em;
-    padding: 0.8em 1.2em;
 }
 .watchVideos_hp{
     border-radius: 2em;
@@ -266,4 +267,73 @@
     font-size: 0.75rem;
     font-weight: 400;
     cursor: default;
+}
+.hp_features_transanctions{
+    margin: 3em 0em;
+    padding: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hp_features_transanctions_img{
+    padding: 0em 8em;
+    width: 40vw;
+}
+.hp_features_transanctions_detail{
+    display: flex;
+    flex-direction: column;
+}
+.hp_features_transanctions_detail_title{
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #172762;
+}
+.hp_features_transanctions_detail_desc{
+    width: inherit;
+    color: #2c3850;
+    font-size: 0.93em;
+    margin: 1.3em 0em;
+    line-height: 1.7em;
+    padding: 0em 1.2em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    border-left: 0.5em solid rgb(31, 162, 255);
+}
+.hp_features_transanctions_detail_buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0em;
+}
+.hp_features_transanctions_detail_buttons_learn_more{
+    border: none;
+    border-radius: 5em;
+    color: #e5e5e5;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(27,204,255);
+    background: linear-gradient(90deg, rgba(27,204,255,1) 0%, rgba(20,96,255,1) 100%);
+}
+.hp_features_transanctions_detail_buttons_learn_more:hover{
+    transition-duration: 0.2s;
+    transform: translateY(-0.2em);
+    box-shadow: 0px 0.5em 1em rgba(84, 113, 255, 0.381);
+    border: none;
+}
+.hp_features_transanctions_detail_buttons_directions{
+    border: none;
+    cursor: pointer;
+    border-radius: 5em;
+    padding: 1em;
+    background-color: #d4d4d4;
+    margin: 0em 1em;
+    color: rgb(0, 79, 164);
+    font-family: 'Poppins', sans-serif;
+}
+.hp_features_transanctions_detail_buttons_directions:hover{
+    transition-duration: 0.2s;
+    transform: translateY(-0.2em);
+    box-shadow: 0px 0.5em 1em rgba(189, 200, 255, 0.381);
 }

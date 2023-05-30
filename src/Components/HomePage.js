@@ -4,6 +4,7 @@ import { AssessmentOutlined } from "@mui/icons-material";
 import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 import CreditScoreOutlinedIcon from '@mui/icons-material/CreditScoreOutlined';
 import MarkAsUnreadOutlinedIcon from '@mui/icons-material/MarkAsUnreadOutlined';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function HomePage() {
   return (
@@ -43,7 +44,10 @@ function HomePage() {
         and much more, <br /> from anywhere, anytime.
       </div>
       <div className="getWatch_hp">
-        <button className="getStarted_hp">Get Started</button>
+        <button className="getStarted_hp">
+          Get Started
+          <ArrowRightAltIcon className="getStarted_hp_icon" />
+        </button>
         <button className="watchVideos_hp">Watch Videos</button>
       </div>
       <img
@@ -113,6 +117,25 @@ function HomePage() {
             <span className="hp_features_card_description">
               Get real-time updates on your <br/> transactions and bills
             </span>
+          </div>
+        </div>
+        <div className="hp_features_transanctions">
+          <img src="https://i.ibb.co/2sHq9dk/morphis-payment-by-smartphone-by-qr-code.png" className="hp_features_transanctions_img"/>
+          <div className="hp_features_transanctions_detail">
+            <div className="hp_features_transanctions_detail_title">
+              Make transactions with <br /> your friends
+            </div>
+            <div className="hp_features_transanctions_detail_desc">
+              Effortlessly split bills and settle expenses with friends. Simplify the financial collaboration and make transactions seamlessly. Start sharing expenses with ease today!
+            </div>
+            <div className="hp_features_transanctions_detail_buttons">
+              <button className="hp_features_transanctions_detail_buttons_learn_more">
+                Learn More
+              </button>
+              <button className="hp_features_transanctions_detail_buttons_directions">
+                See Directions
+              </button>
+            </div>
           </div>
         </div>
       </div>
