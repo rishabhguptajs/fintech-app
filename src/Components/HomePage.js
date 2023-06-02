@@ -139,6 +139,11 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="hp_howWorks" id="howWorks">
+        <span className="hp_howWorks_title">
+          How SplitMe Works
+        </span>
+      </div>
     </div>
   );
 }
