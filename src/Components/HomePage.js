@@ -1,11 +1,22 @@
 import React from "react";
 import "./CSS/HomePage.css";
 import { AssessmentOutlined } from "@mui/icons-material";
-import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
-import CreditScoreOutlinedIcon from '@mui/icons-material/CreditScoreOutlined';
-import MarkAsUnreadOutlinedIcon from '@mui/icons-material/MarkAsUnreadOutlined';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
+import CreditScoreOutlinedIcon from "@mui/icons-material/CreditScoreOutlined";
+import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
+const handleClickAccordion = () => {
+  const acc = document.getElementsByClassName("hp_howWorks_content_card_accordion");
+  const panel = document.getElementsByClassName("hp_howWorks_content_card_content");
+  if (panel[0].style.display === "block") {
+    panel[0].style.display = "none";
+    acc[0].classList.remove("active");
+  } else {
+    panel[0].style.display = "block";
+    acc[0].classList.add("active");
+  }
+}
 function HomePage() {
   return (
     <div className="hp">
@@ -94,39 +105,49 @@ function HomePage() {
             <AssessmentOutlined className="hp_features_card1_icon" />
             <span className="hp_features_card_title">Expense Tracker</span>
             <span className="hp_features_card_description">
-              Track your expenses and manage your <br/> budget with ease using our app 
+              Track your expenses and manage your <br /> budget with ease using
+              our app
             </span>
           </div>
           <div className="hp_features_card">
             <ReceiptOutlinedIcon className="hp_features_card2_icon" />
             <span className="hp_features_card_title">Bill Splitting</span>
             <span className="hp_features_card_description">
-              Split bills with your friends and family <br/> and settle them effortlessly
+              Split bills with your friends and family <br /> and settle them
+              effortlessly
             </span>
           </div>
           <div className="hp_features_card">
             <CreditScoreOutlinedIcon className="hp_features_card1_icon" />
-            <span className="hp_features_card_title">Secure and Private Transanctions</span>
+            <span className="hp_features_card_title">
+              Secure and Private Transanctions
+            </span>
             <span className="hp_features_card_description">
-              Your data is safe with us and we <br/> ensure that your privacy is maintained
+              Your data is safe with us and we <br /> ensure that your privacy
+              is maintained
             </span>
           </div>
           <div className="hp_features_card">
             <MarkAsUnreadOutlinedIcon className="hp_features_card2_icon" />
             <span className="hp_features_card_title">Real-time Updates</span>
             <span className="hp_features_card_description">
-              Get real-time updates on your <br/> transactions and bills
+              Get real-time updates on your <br /> transactions and bills
             </span>
           </div>
         </div>
         <div className="hp_features_transanctions">
-          <img src="https://i.ibb.co/2sHq9dk/morphis-payment-by-smartphone-by-qr-code.png" className="hp_features_transanctions_img"/>
+          <img
+            src="https://i.ibb.co/2sHq9dk/morphis-payment-by-smartphone-by-qr-code.png"
+            className="hp_features_transanctions_img"
+          />
           <div className="hp_features_transanctions_detail">
             <div className="hp_features_transanctions_detail_title">
               Make transactions with <br /> your friends
             </div>
             <div className="hp_features_transanctions_detail_desc">
-              Effortlessly split bills and settle expenses with friends. Simplify the financial collaboration and make transactions seamlessly. Start sharing expenses with ease today!
+              Effortlessly split bills and settle expenses with friends.
+              Simplify the financial collaboration and make transactions
+              seamlessly. Start sharing expenses with ease today!
             </div>
             <div className="hp_features_transanctions_detail_buttons">
               <button className="hp_features_transanctions_detail_buttons_learn_more">
@@ -140,9 +161,35 @@ function HomePage() {
         </div>
       </div>
       <div className="hp_howWorks" id="howWorks">
-        <span className="hp_howWorks_title">
-          How SplitMe Works
+        <span className="hp_howWorks_title">How SplitMe Works?</span>
+        <span className="hp_howWorks_title_description">
+          Simple and easy steps to get started with SplitMe
         </span>
+        <div className="hp_howWorks_content">
+          <div className="hp_howWorks_content_card">
+            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
+              Create an Account
+              <div className="hp_howWorks_content_card_content">
+                Create an account on SplitMe and get started with your expense
+                <br /> tracking and bill splitting journey with us.
+              </div>
+            </button>
+            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
+              Complete your Profile
+              <div className="hp_howWorks_content_card_content">
+                Complete your profile by adding your name, email address and 
+                <br /> phone number to get started with SplitMe.
+              </div>
+            </button>
+            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
+              Get started with transanctions
+              <div className="hp_howWorks_content_card_content">
+                Start making transactions with your friends and family and
+                <br /> split bills with ease.
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
