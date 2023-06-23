@@ -6,17 +6,6 @@ import CreditScoreOutlinedIcon from "@mui/icons-material/CreditScoreOutlined";
 import MarkAsUnreadOutlinedIcon from "@mui/icons-material/MarkAsUnreadOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-const handleClickAccordion = () => {
-  const acc = document.getElementsByClassName("hp_howWorks_content_card_accordion");
-  const panel = document.getElementsByClassName("hp_howWorks_content_card_content");
-  if (panel[0].style.display === "block") {
-    panel[0].style.display = "none";
-    acc[0].classList.remove("active");
-  } else {
-    panel[0].style.display = "block";
-    acc[0].classList.add("active");
-  }
-}
 function HomePage() {
   return (
     <div className="hp">
@@ -167,28 +156,10 @@ function HomePage() {
         </span>
         <div className="hp_howWorks_content">
           <div className="hp_howWorks_content_card">
-            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
-              Create an Account
-              <div className="hp_howWorks_content_card_content">
-                Create an account on SplitMe and get started with your expense
-                <br /> tracking and bill splitting journey with us.
-              </div>
-            </button>
-            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
-              Complete your Profile
-              <div className="hp_howWorks_content_card_content">
-                Complete your profile by adding your name, email address and 
-                <br /> phone number to get started with SplitMe.
-              </div>
-            </button>
-            <button className="hp_howWorks_content_card_accordion" onClick={handleClickAccordion}>
-              Get started with transanctions
-              <div className="hp_howWorks_content_card_content">
-                Start making transactions with your friends and family and
-                <br /> split bills with ease.
-              </div>
-            </button>
+            
           </div>
+          <div className="hp_howWorks_content_card"></div>
+          <div className="hp_howWorks_content_card"></div>
         </div>
       </div>
     </div>
