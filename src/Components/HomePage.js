@@ -19,9 +19,6 @@ function HomePage() {
             <a href="#features">Features</a>
           </li>
           <li>
-            <a href="#howWorks">How it works</a>
-          </li>
-          <li>
             <a href="#about">About</a>
           </li>
           <li>
@@ -149,19 +146,57 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="hp_howWorks" id="howWorks">
-        <span className="hp_howWorks_title">How SplitMe Works?</span>
-        <span className="hp_howWorks_title_description">
-          Simple and easy steps to get started with SplitMe
-        </span>
-        <div className="hp_howWorks_content">
-          <div className="hp_howWorks_content_card">
-            
-          </div>
-          <div className="hp_howWorks_content_card"></div>
-          <div className="hp_howWorks_content_card"></div>
+      <div className="hp_about" id="about">
+        <div className="hp_about_title">About Us</div>
+        <div className="hp_about_desc">
+          SplitMe is a free app that helps you split bills with friends and
+          family and much more, from anywhere, anytime. <br /> <br />
+          I am a student and I have made this app for my project. I hope you
+          like it. If you have any suggestions or feedback, please feel free to
+          contact me. <br />
+          Thank you for using SplitMe.
+        </div>
+        <div className="hp_about_img">
+          <img
+            src="https://i.ibb.co/CBmwfkV/homepage-bg.png"
+            alt="homepage-bg"
+            border="0"
+            className="bg_img1_hp"
+          ></img>
+          <img
+            src="https://i.ibb.co/CBmwfkV/homepage-bg.png"
+            alt="homepage-bg"
+            border="0"
+            className="bg_img1_hp"
+          ></img>
         </div>
       </div>
+      <div className="hp_contact" id="contact">
+        <div className="hp_contact_title">Contact Us</div>
+        <div className="hp_contact_desc">
+          If you have any queries or suggestions, please feel free to contact
+          us. <br /> <br />
+          <form className="hp_contact_form">
+            <input
+              type="text"
+              placeholder="Name"
+              className="hp_contact_form_input"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="hp_contact_form_input"
+            />
+            <input
+              type="text"
+              placeholder="Message"
+              className="hp_contact_form_input"
+            />
+            <button className="hp_contact_form_submitbtn">Submit</button>
+          </form>
+        </div>
+        </div>
+        <div className="hp_footer"></div>  
     </div>
   );
 }
